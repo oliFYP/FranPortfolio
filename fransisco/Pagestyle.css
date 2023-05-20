@@ -34,6 +34,7 @@ html, body {
   .logo{
     margin-right: 40%;
     transform: translateX(-40%);
+    cursor: pointer;
     
   }
   .menu-logo {
@@ -167,7 +168,11 @@ html, body {
     
   }
 
-  .image-caption {
+  
+
+  .image-caption1,
+  .image-caption2,
+  .image-caption3 {
     position: absolute;
   bottom: -100%;
   left: 0;
@@ -185,7 +190,9 @@ html, body {
   justify-content: center;
   }
   
-  .image-item:hover .image-caption {
+  .image-item:hover .image-caption1,
+  .image-item:hover .image-caption2,
+  .image-item:hover .image-caption3 {
     bottom:0%;  
     cursor: pointer;
     

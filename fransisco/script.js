@@ -19,7 +19,9 @@ window.addEventListener("scroll", function() {
       behavior: 'smooth'
     });
   }
-  
+  function navigateToPage(url) {
+    window.location.href = url;
+  }
   
   function toggleSideMenu() {
     const sideMenu = document.querySelector('.side-menu');
