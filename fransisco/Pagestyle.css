@@ -1,0 +1,274 @@
+@font-face {
+    font-family: rose;
+    src: url(fonts/rose.ttf);
+  }
+  @font-face {
+    font-family: Brushwork;
+    src: url(fonts/Brushwork.ttf);
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar {
+    background: white;
+    height: 60px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: height 0.9s ease-in-out, padding 0.9s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    
+  align-items: center;
+  z-index: 2;
+  }
+  .top-bar img {
+    max-height: 100%;
+    max-width: 100%;
+  
+  }
+  .logo{
+    margin-right: 40%;
+    transform: translateX(-40%);
+    
+  }
+  .menu-logo {
+    width: 30px; 
+    height: auto; 
+    margin-left: 2%;
+    cursor: pointer;
+    
+  }
+  .side-menu {
+    position: fixed;
+    display: flex;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px; 
+    background-color: rgb(255, 255, 255); 
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-250px); 
+    z-index: 4;
+   
+  }
+  
+  .side-menu.open {
+    transform: translateX(0); 
+  }
+  .back{
+    width: auto; 
+    height: 50px;
+    position: absolute;
+    margin-left: 4px ;
+    bottom: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  
+  .side-menu-text div{
+    position: flex;
+    font-size: x-large;
+    font-family:rose;
+    text-align: center;
+      color: rgb(0, 0, 0);
+      margin: 20px;
+      margin-bottom: 80px;
+      margin-top:  80px;
+      margin-left: 60px;  
+      cursor: pointer;
+  }
+  .side-menu-text h2{
+    position: flex;
+    font-size: xx-large;
+    font-family:rose;
+    text-align: center;
+      color: rgb(0, 0, 0);
+      margin: 20px;
+      margin-bottom: 20px;
+      margin-top:  20px;
+      margin-left: 60px;  
+  }
+  
+  .scroll-down .top-bar {
+    background-color: white;
+  
+    padding: 5px; 
+    height: 40px; 
+  }
+  .layout{
+    display: grid;
+    margin-top: 60px;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    padding: 0px;
+  }
+  .main-image {
+    width: 100%;
+  height:auto;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .image2 {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    width: 100%;
+  height:auto;
+  left: 0;
+    top: 0;
+  }
+  .image3 {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    width: 100%;
+  height:auto;
+  left: 0;
+    top: 0;
+    
+    
+  }
+  .image4 {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+    width: 100%;
+  height:auto;
+  left: 0;
+    top: 0;
+   
+    
+  }
+  .image5 {
+    grid-column: 1 / span 1;
+    grid-row: 4;
+    width: 100%;
+  height:auto;
+  left: 0;
+    top: 0;
+    
+    
+  }
+  .image6 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    width: 100%;
+  height:auto;
+  left: 0;
+    top: 0;
+    
+    
+  }
+
+  .image-caption {
+    position: absolute;
+  bottom: -100%;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0px;
+  transition: bottom 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .image-item:hover .image-caption {
+    bottom:0%;  
+    cursor: pointer;
+    
+  }
+  
+  
+  .image-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .image-item:hover img {
+    filter: brightness(0.8) blur(5px);
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    position: sticky; 
+    top: 0;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    z-index: 1;
+    font-size: x-large; 
+    text-align: center;
+    
+}
+.container p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.container h2{
+    font-family: rose; 
+ 
+}
+.container button {
+   
+    width: 250px;
+    height: 50px;
+    background-color: #000000;
+    font-family: rose;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+   
+    font-size: larger;
+    
+    
+}
+    
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    grid-column: 2 / span 1;
+    grid-row: 2;
+  }
+  .image-container {
+    display: flex;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+
