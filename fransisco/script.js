@@ -19,8 +19,13 @@ window.addEventListener("scroll", function() {
       behavior: 'smooth'
     });
   }
-  function navigateToPage(url) {
-    window.location.href = url;
+  function navigateToPage(page) {
+    const layout = document.querySelector('.layout');
+    layout.classList.add('hide');
+  
+    setTimeout(function () {
+      window.location.href = page;
+    }, 300);
   }
   
   function toggleSideMenu() {
@@ -35,4 +40,13 @@ window.addEventListener("scroll", function() {
   }
   function openYoutube() {
     window.open("https://youtu.be/Wdg19fUDLY4");
+  }
+  function showFullscreenImage(imageSrc) {
+    var fullscreenImg = document.querySelector('#fullscreen-img img');
+    fullscreenImg.src = imageSrc;
+    document.getElementById('fullscreen-img').style.display = 'block';
+  }
+  
+  function hideFullscreenImage() {
+    document.getElementById('fullscreen-img').style.display = 'none';
   }

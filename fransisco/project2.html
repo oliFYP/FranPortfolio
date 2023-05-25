@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Pagestyle.css">
+        <link rel="stylesheet" type="text/css" href="projectstyle.css">
+        <link rel="stylesheet" type="text/css" href="projectstyle1.css">
+        <link rel="stylesheet" type="text/css" href="lightbox.css">
+        <link rel="stylesheet" type="text/css" href="mobileview1.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="top-bar">
+            <img src="img/hamburger.png" class="menu-logo" onclick="toggleSideMenu()">
+            <img src="img/logo.png" alt="Logo" class="logo" onclick="navigateToPage('index.html')">
+          </div>
+          <div class="side-menu">
+          <img src= "img/arrow.png "class="back" onclick="toggleSideMenu()">
+        <div class="side-menu-text"> 
+            <h2 class="menu-item">Info:</h2>
+      
+                <div class="menu-item"onclick = "openLinkedin()">Linkedin</div>
+                <div class="menu-item" onclick="openInstagram()">Instagram </div>
+                <div class="menu-item" onclick="openYoutube()">Youtube</div>
+                <div class="menu-item">Contact</div>
+        </div>
+    </div>
+    <div class="layout">
+        <img class="seasonsip-image" src="img/fran.jpeg" onclick="showFullscreenImage('img/fran.jpeg')" >
+        <div class="firstcontainer-season">
+            <h2> Season Sip</h2>
+            <i>Branding</i>
+            <i>Menu & Catalogue Design</i>
+            <i>BioCoasters (BioMaterials)</i>
+            <i>Art Direction</i>
+            <p>2023</p>
+        </div>
+            <div class="secondcontainer">
+                <i>“Season Sip” is a space where the community is cherished, and seasonality is the key to respecting nature.
+                     A bar that focuses on delivering cocktails made from seasonal products, either in-house or locally grown.</i>
+                <i>This project started with me researching Biomaterials. Working as a Bartender as my side job, I identified 
+                    a few problems in traditional bars - fruits imported from far-away countries, perfectly-good fruit going to waste,
+                     and a lack of connection with the place and community around it.
+                    “Season Sip” is an answer to that.</i> 
+            </div>
+            <img class="seasonsip-image1" src="img/seasonsip1.jpeg" onclick="showFullscreenImage('img/seasonsip1.jpeg')" >
+            <img class="seasonsip-image2" src="img/seasonsip2.jpeg" onclick="showFullscreenImage('img/seasonsip2.jpeg')" >
+            <img class="seasonsip-image3" src="img/seasonsip3.jpeg" onclick="showFullscreenImage('img/seasonsip3.jpeg')">
+            
+            <div class="containerproj2">
+                <h2> Coffee Grounds BioCoasters</h2>
+                <i>It embraces innovation, using fruit and coffee waste to create Biomaterial coasters and bar mats, that feel like leather.
+                     They are biodegradable and can be compostable, transforming them into positive waste.</i>
+                
+            </div>
+               
+</div>
+<div id="fullscreen-img" onclick="hideFullscreenImage()">
+    <img src="" alt="Fullscreen Image" />
+  </div>    
+  
+        
+      </body>
+</html>
